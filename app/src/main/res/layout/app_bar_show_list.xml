@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/show_list_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ShowListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/show_list_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="@dimen/app_bar_elevation">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/show_list_collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:collapsedTitleGravity="start"
+            app:expandedTitleGravity="start|bottom"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:toolbarId="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/content_description_photo"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:tint="@color/appbarBackgroundTint"
+                app:layout_collapseMode="parallax"
+                app:srcCompat="@drawable/background_emmas_tattoo"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_show_list"/>
+
+    <!-- BOTTOM SHEET     <include android:id="@+id/fragment_playback_controls"
+        layout="@layout/fragment_playback_controls" /> -->
+
+    <fragment
+        android:id="@+id/fragment_playback_controls"
+        android:name="com.himebaugh.deadstreams.ui.PlaybackControlsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="0dp"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="80dp"
+        app:elevation="4dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        tools:layout="@layout/fragment_playback_controls" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

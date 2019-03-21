@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/player_sheet"
+    android:name="com.himebaugh.deadstreams.ui.PlaybackControlsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorPrimaryDark"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    android:paddingBottom="8dp"
+    android:visibility="visible"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="80dp"
+    app:elevation="4dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:showIn=".ui.PlaybackControlsFragment">
+
+
+    <View
+        android:id="@+id/player_background"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/play_pause_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_play_background_56dp"
+        android:contentDescription="@string/content_description_play_pause_button"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_play_arrow_white_36dp"/>
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/date_venue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/play_pause_button"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Line 1"/>
+
+    <TextView
+        android:id="@+id/date_venue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/play_pause_button"
+        app:layout_constraintTop_toBottomOf="@id/song_name"
+        tools:text="Line 2"/>
+
+    <!--<com.google.android.gms.ads.AdView-->
+        <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/adView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:visibility="visible"-->
+        <!--ads:adSize="BANNER"-->
+        <!--ads:adUnitId="@string/banner_ad_unit_id"-->
+        <!--ads:layout_constraintBottom_toTopOf="@+id/initial_message"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/play_pause_button">-->
+    <!--</com.google.android.gms.ads.AdView>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/initial_message"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:gravity="start"-->
+        <!--android:visibility="visible"-->
+        <!--android:text="@string/initial_message_playback_controls"-->
+        <!--android:textAlignment="viewStart"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/show_extras"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/play_pause_button"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/show_extras"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:gravity="start"-->
+        <!--android:text="@string/extra_show_info_coming_soon"-->
+        <!--android:textAlignment="viewStart"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/initial_message"/>-->
+
+    <!--
+
+        <ImageView
+            android:id="@+id/player_station_image"
+            android:layout_width="@dimen/fab_size_normal"
+            android:layout_height="@dimen/fab_size_normal"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/descr_station_icon"
+            app:layout_constraintStart_toStartOf="@+id/player_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_circle_large_grey_36dp" />
+
+        <ImageButton
+            android:id="@+id/player_playback_button"
+            android:layout_width="@dimen/fab_size_normal"
+            android:layout_height="@dimen/fab_size_normal"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_circle_large_56dp"
+            android:contentDescription="@string/descr_playback_button"
+            app:layout_constraintEnd_toEndOf="@+id/player_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_play_arrow_white_36dp" />
+
+        <TextView
+            android:id="@+id/player_station_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/descr_station_name_example"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/descr_station_name_example"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/player_sheet_text_main"
+            app:layout_constraintBottom_toTopOf="@+id/player_station_metadata"
+            app:layout_constraintEnd_toStartOf="@+id/player_playback_button"
+            app:layout_constraintStart_toEndOf="@+id/player_station_image"
+            app:layout_constraintTop_toTopOf="@+id/player_background" />
+
+        <TextView
+            android:id="@+id/player_station_metadata"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/descr_station_metadata_example"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/descr_station_metadata_example"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/player_sheet_text_details"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/player_background"
+            app:layout_constraintEnd_toStartOf="@+id/player_playback_button"
+            app:layout_constraintStart_toEndOf="@+id/player_station_image"
+            app:layout_constraintTop_toBottomOf="@+id/player_station_name" />
+    -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

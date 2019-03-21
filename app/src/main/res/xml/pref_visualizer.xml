@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/pref_widget_color_value_black"
+        android:entries="@array/pref_widget_color_option_labels"
+        android:entryValues="@array/pref_widget_color_option_values"
+        android:key="@string/pref_widget_key"
+        android:title="@string/pref_widget_label"/>
+
+</PreferenceScreen>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ShowListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay"
+        app:elevation="@dimen/app_bar_elevation">
+
+        <TextView
+            android:id="@+id/show_info"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:textColor="#fff"
+            android:visibility="visible"
+            tools:text="Show Info"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"/>
+
+        <!--</com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_song_list"/>
+
+    <fragment
+        android:id="@+id/fragment_playback_controls"
+        android:name="com.himebaugh.deadstreams.ui.PlaybackControlsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="0dp"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="80dp"
+        app:elevation="4dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        tools:layout="@layout/fragment_playback_controls"/>
+
+    <!-- hope this doesn't interfere with anything else -->
+    <FrameLayout
+        android:id="@+id/two_pane_detected"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

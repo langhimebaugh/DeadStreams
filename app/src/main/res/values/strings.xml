@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  - The <xliff:g> tags help any potential translators properly translate your strings          -
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<resources>
+
+    <string name="app_name">Dead Streams</string>
+
+    <string name="activity_label_shows">All Shows</string>
+    <string name="activity_label_favorites">Favorite Shows</string>
+    <string name="activity_label_playlists">My Playlists</string>
+    <string name="activity_label_random">Random Playlist</string>
+    <string name="activity_label_settings">Settings</string>
+    <string name="activity_label_about">About</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_title">Dead Streams</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+    <string name="nav_item_shows">All Shows</string>
+    <string name="nav_item_favorites">Favorite Shows</string>
+    <string name="nav_item_playlists">My Playlists</string>
+    <string name="nav_item_random">Random Playlist</string>
+    <string name="nav_item_settings">Settings</string>
+    <string name="nav_item_about">About</string>
+
+    <string name="default_song_name">Select Something To Play</string>
+    <string name="initial_message_playback_controls">Select Something To Play</string>
+    <string name="initial_message_select_a_show">Welcome! Select a show to get started.</string>
+    <string name="initial_message_swipe_to_load_random_songs">Swipe down to Load Songs!\n\nSwipe again to generate a new random list.</string>
+    <string name="initial_message_favorite_a_show">You have no favorite shows. Browse all shows and select your favorites.</string>
+    <string name="coming_soon">Coming Soon!</string>
+    <string name="extra_show_info_coming_soon">Extra Show info coming soon :-)</string>
+
+    <string name="initial_download_complete">initial_download_complete</string>
+    <string name="shows_download_complete">shows_download_complete</string>
+    <string name="songs_download_complete">songs_download_complete</string>
+    <string name="songs_atoz_download_complete">songs_atoz_download_complete</string>
+    <string name="playlist_download_complete">playlist_download_complete</string>
+    <string name="last_played_initialized">last_played_initialized</string>
+    <string name="button_download">Download</string>
+
+    <string name="splash_activity_message_downloading_shows">Downloading Shows…</string>
+    <string name="splash_activity_message_no_internet">No Internet Connection</string>
+
+    <string name="content_description_nav_header">Navigation header</string>
+    <string name="content_description_photo">Photo of Grateful Dead Tattoo</string>
+    <string name="content_description_play_item">Click to Play or Pause this item</string>
+    <string name="content_description_play_pause_button">play_pause_button</string>
+    <string name="content_description_song_name">Song Name</string>
+    <string name="content_description_band_name">Band Name</string>
+    <string name="content_description_song_length">Song Length</string>
+    <string name="content_description_favorite_show">Click to Favorite Show</string>
+    <string name="content_description_previous_song">Click for Previous Song</string>
+    <string name="content_description_play_or_pause">Click to Play or Pause</string>
+    <string name="content_description_next_song">Click for Next Song</string>
+
+    <!-- about -->
+    <string name="about_title">Dead Streams</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="about_description">Stream Grateful Dead music concert/shows from the Internet Archive (archive.org). Audio is
+from soundboard recordings or audience uploads and free to use.\n\n
+    Main features of the app:\n
+● Browse concerts/shows.\n
+● Search for songs.\n
+● Save concerts/shows as favorites for easy playback.\n
+● Save songs to custom playlists.\n
+● Random Play of songs.\n
+● No Advertising.\n\n
+
+    This App uses bandwidth to stream music. Depending on your mobile network plan, you may incur fees charged for data usage and overage, which are your sole responsibility.\n\n
+
+        STATEMENT TO MP3 SITE OPERATORS\n
+The Grateful Dead and our managing organizations have long encouraged the purely non-commercial exchange of music taped at our concerts and those of our individual members. That a new medium of distribution has arisen - digital audio files being traded over the Internet - does not change our policy in this regard. Our stipulations regarding digital distribution are merely extensions of those long-standing principles and they are as follow:
+\n\n
+No commercial gain may be sought by websites offering digital files of our music, whether through advertising, exploiting databases compiled from their traffic, or any other means. \n
+All participants in such digital exchange acknowledge and respect the copyrights of the performers, writers and publishers of the music. \n
+This notice should be clearly posted on all sites engaged in this activity. \n
+We reserve the ability to withdraw our sanction of non-commercial digital music should circumstances arise that compromise our ability to protect and steward the integrity of our work.\n
+    </string>
+    <string name="about_contact">Contact: support@himebaugh.com</string>
+    <string name="about_copyright">Copyright © 2018 Langdon Himebaugh</string>
+
+    <!-- - - - - - - - - - - - - - - -
+    - Used by Preferences  -
+    - - - - - - - - - - - - - - - -->
+    <string name="pref_widget_label">Widget Background Color</string>
+    <string name="pref_widget_key" translatable="false">pref_widget_color</string>
+    <string name="pref_widget_color_label_black">Black</string>
+    <string name="pref_widget_color_label_transparent">Transparent</string>
+    <string name="pref_widget_color_value_black" translatable="false">1</string>
+    <string name="pref_widget_color_value_transparent" translatable="false">2</string>
+
+    <!-- - - - - - - - - - - - - - -
+    - Used by DateUtils  -
+    - - - - - - - - - - - - - - -->
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+
+    <!-- ********************************************************** -->
+    <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713-->
+    <!-- Actual AdMob App ID: ca-app-pub-9871570718562337~8522410209-->
+
+    <!-- Testing ad unit ID: ca-app-pub-3940256099942544/6300978111-->
+    <!-- Actual  ad unit ID: ca-app-pub-9871570718562337/3362540721-->
+
+    <!-- CHANGE FROM SAMPLE/TESTING TO ACTUAL IN strings.xml -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="message_audio_is_buffering">Audio is buffering</string>
+    <string name="error">Error</string>
+    <string name="message_check_internet">Check internet connection.</string>
+    <string name="message_connecting">Connecting…</string>
+    <!-- ********************************************************** -->
+
+    <string name="playlists">Playlists</string>
+    <string name="choose_playlist">Choose playlist</string>
+    <string name="new_playlist">New playlist</string>
+    <string name="playlist_name">Playlist name</string>
+    <string name="create_playlist">Create playlist</string>
+    <string name="action_add_to_playlist">Add to playlist</string>
+
+</resources>

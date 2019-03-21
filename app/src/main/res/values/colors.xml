@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7c7567</color>
+    <color name="colorPrimaryDark">#504a3d</color>
+    <color name="colorAccent">#be7989</color>
+
+    <color name="primaryTextColor">#ffffff</color>
+
+    <color name="appbarBackgroundTint">#BA7C7567</color>
+
+    <color name="songListIconPlayingColor">#BE7989</color>
+    <color name="songListIconNotPlayingColor">#aba495</color>
+
+    <color name="selectedBackground">#40aba495</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="blue_900_trans">#980d47a1</color>
+    <color name="lime_700">#AFB42B</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+
+</resources>
